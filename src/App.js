@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import List from "./List";
 import "./App.css";
 import Modal from "./modal/Modal";
@@ -102,12 +102,12 @@ const App = () => {
       />
       <section className="section-center">
         <form className="regform">
-          <h3> shopping list </h3>
+          <h3> TO DO LIST </h3>
           <div className="form-control">
             <input
               type="text"
               className="input-control"
-              placeholder="e.g. items"
+              placeholder="e.g. tasks"
               value={name}
               onChange={(e) => {
                 setName(e.target.value);
@@ -120,7 +120,7 @@ const App = () => {
         </form>
 
         <div className="filter">
-          <p>List Items: </p>
+          <p>Task List: </p>
           <div>
             <button className="btn-sort" onClick={sort}>
               <FaSort />
